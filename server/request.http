@@ -1,0 +1,66 @@
+.P2
+22222222222222222222222222222222222222222222220OST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "nhattam",
+    "password": "11042001"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "nhattam",
+    "password": "11042001"
+}
+
+###
+
+GET http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+    "username": "nhattam",
+    "password": "11042001"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmJkNTc2ZDhhMTA3NWNkZTNiNDhjYzAiLCJpYXQiOjE2NTY1NzU4NTZ9.Q5sGkxDyTMvjHAO1iIrja4cvwWbuA_wXU7eArWNk2WM
+
+{
+    "title": "Full Stack MERN 3",
+    "description": "Full Stack MERN course",
+    "url": "https://google.com",
+    "status": "TO LEARN"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmJkNTc2ZDhhMTA3NWNkZTNiNDhjYzAiLCJpYXQiOjE2NTY1NzU4NTZ9.Q5sGkxDyTMvjHAO1iIrja4cvwWbuA_wXU7eArWNk2WM
+
+###
+
+PUT http://localhost:5000/api/posts/62bd58798a1075cde3b48cc5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmJkNTc2ZDhhMTA3NWNkZTNiNDhjYzAiLCJpYXQiOjE2NTY1NzU4NTZ9.Q5sGkxDyTMvjHAO1iIrja4cvwWbuA_wXU7eArWNk2WM
+
+{
+    "title": "Full Stack MERN Updated",
+    "description": "Full Stack MERN course Updated",
+    "url": "google.com",
+    "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/62bd58798a1075cde3b48cc5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmJkNTc2ZDhhMTA3NWNkZTNiNDhjYzAiLCJpYXQiOjE2NTY1NzU4NTZ9.Q5sGkxDyTMvjHAO1iIrja4cvwWbuA_wXU7eArWNk2WM
+
+
